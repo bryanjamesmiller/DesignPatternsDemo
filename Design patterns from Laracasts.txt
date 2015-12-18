@@ -1,0 +1,19 @@
+Decorator pattern:  A bunch of little classes that implement the same interface
+ can call each other in the constructor.  That way, you can "wrap" them (what the word"decorate)
+ is referring to is "wrapping") like this:  new OilChange(new CarInspect(new TireRotate))) and
+ you can keep on "decorating" that by wrapping it more and more with whatever implementations
+ you need.  This is better than doing inheritance because inheritance would become 1 big bulky
+ program that you might break whenever you change anything in it, but these little classes will
+ never need to be changed once they're up and working (and if you did need to change them, they
+ are so little they'd be easier to debug).
+
+Adapter pattern:  If you have two similar classes like "Book" and "Kindle" that have the same
+ functions, but different names, you can keep 1 interface for both by using an "adapter interface"
+ which is like a 2nd layer or wrapper interface so that you can name the methods fitting names
+ for both and then use the same methods for both.  So "openbook()" and "turnkindleon()" both
+ refer to "openbook()".  One question I have is it seems like since "turnkindleon()" just points
+ to "openbook()" and you can't call "turnkindleon()", it seems almost pointless to have "turnkindleon()"
+ to begin with.  The only purpose I see is that it explains what "openbook()" means for the Kindle.
+ One use of this design pattern is if your users are used to seeing certain methods for an interface,
+ you can swap interfaces but keep the same methods.
+

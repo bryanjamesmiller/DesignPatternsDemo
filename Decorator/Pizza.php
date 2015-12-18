@@ -1,0 +1,12 @@
+<?php
+
+include_once "constants.php";
+
+class Pizza implements Business{
+    // Notice how the Pizza is the base class that doesn't have a constructor
+    // and doesn't add anything to the return value.
+    public function buy()
+    {
+        return PIZZA_PRICE;
+    }
+}
