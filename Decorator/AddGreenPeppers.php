@@ -2,12 +2,12 @@
 
 include_once "constants.php";
 
-class AddGreenPeppers implements Business{
+class AddGreenPeppers implements BusinessInterface{
 
     protected $business;
 
     // Make sure you have two underscores before __construct
-    function __construct(Business $business)
+    function __construct(BusinessInterface $business)
     {
         $this->business = $business;
     }

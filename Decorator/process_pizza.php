@@ -6,7 +6,7 @@
  * (except for perhaps the price).  Once it is up and running, you can just leave it alone!
  */
 
-include_once "Business.php";
+include_once "BusinessInterface.php";
 include_once "Pizza.php";
 include_once "AddOlives.php";
 include_once "AddGreenPeppers.php";
