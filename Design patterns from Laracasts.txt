@@ -24,3 +24,10 @@ Template pattern:
     // be defined in multiple ways while keeping the above algorithm
     // in the make() function intact.
 
+Chain of Responsibility pattern:
+ If you have a request and would like to try many different ways of handling that
+ request, such as what kind of email you are receiving (spam, promotions, or friends),
+ you can use the chain to try to handle the request, and if it doesn't match that
+ "link in the chain", then pass it on to the next link and try again.  If nothing matches
+ in the chain, the request can fall off the chain unless you have a catch-all link
+ at the end of the chain.
