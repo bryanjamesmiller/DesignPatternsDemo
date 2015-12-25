@@ -17,3 +17,10 @@ Adapter pattern:  If you have two similar classes like "Book" and "Kindle" that 
  One use of this design pattern is if your users are used to seeing certain methods for an interface,
  you can swap interfaces but keep the same methods.
 
+Template pattern:
+    // The purposes of an abstract method is that it must be implemented
+    // by any class that extends this abstract class.  The strength
+    // of the template design pattern is that this class can then
+    // be defined in multiple ways while keeping the above algorithm
+    // in the make() function intact.
+
